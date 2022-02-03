@@ -1,0 +1,46 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background: url(../img/image.jpg) no-repeat center center   ;
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+body img {
+    width: auto;
+    height: 100%;
+}
+.ghost {
+    transition: transform 0.25s ease, opacity 1.25s ease-in;
+}
+
+.cancel-btn {
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    background: red;
+    padding: 1.5em;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    box-shadow: 4px 4px 8px 0 rgba(255, 0, 0, 0.4);
+}
