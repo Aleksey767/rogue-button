@@ -1,46 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Condensed:ital,wght@1,700&display=swap");
 body,
 html {
-    height: 100%;
-    width: 100%;
-
+  font-family: "Merriweather", serif;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    background: url(../img/image.jpg) no-repeat center center   ;
-    background-size: cover;
-    margin: 0;
+  background: url(../img/image.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 0;
 }
 
 h1 {
-    margin: 0;
+  text-align: center;
+  font-size: 45px;
+  margin: 0;
 }
-
+h2 {
+  text-align: center;
+}
 #container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
 }
 body img {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
 .ghost {
-    transition: transform 0.25s ease, opacity 1.25s ease-in;
+  transition: transform 0.25s ease, opacity 1.25s ease-in;
 }
 
 .cancel-btn {
-    border: none;
-    border-radius: 10px;
-    text-transform: uppercase;
-    color: white;
-    background: red;
-    padding: 1.5em;
-    cursor: pointer;
-    margin-bottom: 1.5em;
-    box-shadow: 4px 4px 8px 0 rgba(255, 0, 0, 0.4);
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  background: red;
+  padding: 1.5em;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  box-shadow: 4px 4px 8px 0 rgba(255, 0, 0, 0.4);
+}
+@media (max-width: 720px) {
+  body {
+    background: url(../img/image2.jpg) no-repeat center center;
+  }
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
